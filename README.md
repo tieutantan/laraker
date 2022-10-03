@@ -5,6 +5,7 @@
 - PHP 8.1
 - MariaDB 10.8
 - phpmyadmin:latest
+- phpRedisAdmin:latest
 - redis:alpine
 - Laravel latest
 
