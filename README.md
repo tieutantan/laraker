@@ -1,6 +1,6 @@
 # Laraker
 
-- PHP 8.3
+- PHP 8.3, xDebug 3.3.1
 - MariaDB 11.2
 - phpmyadmin:latest
 - phpRedisAdmin:latest
