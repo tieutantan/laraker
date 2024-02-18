@@ -86,6 +86,7 @@ libpng-dev && \
 # Install Cronjob
 RUN apt-get update -y && apt-get -y install cron
 COPY ./crontab.txt /etc/cron.d/crontab
+RUN sed -i 's/\r$//' /etc/cron.d/crontab
 RUN chmod 0777 /etc/cron.d/crontab
 RUN /usr/bin/crontab /etc/cron.d/crontab
 
@@ -97,5 +98,6 @@ RUN rm -rf /usr/src/*
 
 # COMMANDS RUN AFTER BUILD
 COPY ./startup.sh /usr/local/bin/startup.sh
+RUN sed -i 's/\r$//' /usr/local/bin/startup.sh
 RUN chmod +x /usr/local/bin/startup.sh
 CMD ["/usr/local/bin/startup.sh"]
