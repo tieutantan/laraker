@@ -2,7 +2,7 @@ version: "3"
 
 services:
   webserver:
-    build: 
+    build:
       context: ./bin/${PHPVERSION}
     container_name: '${COMPOSE_PROJECT_NAME}-${PHPVERSION}'
     restart: 'always'
@@ -52,7 +52,7 @@ services:
     environment:
       PMA_HOST: database
       PMA_PORT: 3306
-      PMA_USER: root # uncommended if you want to auto login PMA by root (recommend for dev only)
+      # PMA_USER: root # uncommented if you want to auto login PMA by root (recommend for dev only)
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}

@@ -1,3 +1,0 @@
-# Start cron tasks
-* * * * * cd /var/www/html && /usr/local/bin/php artisan schedule:run >> /dev/null 2>&1
-# End

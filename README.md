@@ -1,19 +1,15 @@
-# Laravel Docker
+# Laraker
 
-### It is similar to Sail but limitation and hard to use more.
-
-- PHP 8.1
-- MariaDB 10.8
+- PHP 8.3
+- MariaDB 11.2
 - phpmyadmin:latest
 - phpRedisAdmin:latest
 - redis:alpine
-- Laravel latest
 
 ## Setup
+- Install Docker ``./install_docker.sh`` * Optional
 - ``docker-compose up -d``
-- ``docker exec -it php_ctn_name /bin/bash``
-- ``cp .env.live .env``
-- ``composer update``
-- ``chmod -R gu+w storage/ && chmod -R guo+w storage/ && chmod -R gu+w bootstrap/cache/ && chmod -R guo+w bootstrap/cache/``
-- ``service cron start`` if need run Schedule
-- ``exit``
+
+## Commands
+
+- ``docker exec -it laraker-php83 /bin/bash``
