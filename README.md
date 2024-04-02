@@ -5,6 +5,7 @@
 - phpmyadmin:latest
 - phpRedisAdmin:latest
 - redis:alpine
+- Auto clear access log, error log.
 
 ## Setup
 - Install Docker ``./install_docker.sh`` * Optional
