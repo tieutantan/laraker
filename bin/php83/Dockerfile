@@ -77,6 +77,12 @@ RUN a2enmod rewrite headers
 # Cleanup redundant files
 RUN rm -rf /usr/src/*
 
+# Clean up
+RUN apt-get clean
+
+# Remove package lists to reduce image size
+RUN rm -rf /var/lib/apt/lists/*
+
 # Prepare for startup
 COPY ./startup.sh /usr/local/bin/startup.sh
 RUN sed -i 's/\r$//' /usr/local/bin/startup.sh && \
