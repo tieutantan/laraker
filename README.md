@@ -8,6 +8,7 @@
 - Auto clear access log, error log.
 
 ## Setup
+- `git clone https://github.com/tieutantan/Laraker.git`
 - Install Docker ``./install_docker.sh`` * Optional
 - ``docker-compose up -d``
 
