@@ -32,12 +32,12 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo chmod 777 /var/run/docker.sock
 sudo systemctl enable docker # enable docker service on boot
 
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt update -y && sudo apt install nodejs -y
-sudo npm install pm2@latest -g && sudo pm2 install pm2-logrotate
+# clean up
+sudo apt-get autoremove -y
+sudo apt-get clean
 
-# shellcheck disable=SC2046
-sudo apt-get install libcap2-bin && sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
+# remove miscellaneous
+sudo rm -rf /var/lib/apt/lists/*
 
 # Print Docker and Docker Compose version
 docker --version

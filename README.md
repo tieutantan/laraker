@@ -1,6 +1,6 @@
 # Laraker
 
-- PHP 8.3, xDebug 3.3.1
+- PHP 8.3, xDebug 3.3.1 Build
 - MariaDB 11.2
 - phpmyadmin:latest
 - phpRedisAdmin:latest
@@ -14,4 +14,7 @@
 
 ## Commands
 
-- ``docker exec -it laraker-php83 /bin/bash``
+- `docker exec -it laraker-php83 /bin/bash`
+- `service cron status`
+- `service cron start`
+- `service cron stop`
