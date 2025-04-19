@@ -2,6 +2,7 @@
 
 - PHP 8.3, xDebug 3.3.1 Build
 - MariaDB 11.2
+- NodeJS 22
 - phpmyadmin:latest
 - phpRedisAdmin:latest
 - redis:alpine
