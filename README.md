@@ -5,9 +5,9 @@ Laraker is a Docker-based local development environment for PHP (Laravel-ready),
 ## Features
 - PHP 8.4 (FPM, Alpine) with Xdebug and Redis extensions
 - Node.js 24 (for frontend asset building)
-- Nginx 1.27 (serves app on port 8001)
-- MySQL 8.0 (port 3306, persistent storage)
-- Redis 7.4 (port 6379, persistent storage)
+- Nginx 1.27 (serves app on port `8001`)
+- MySQL 8.0 (port `3306`, persistent storage)
+- Redis 7.4 (port `6379`, persistent storage)
 - Supervisor (manages PHP-FPM, Laravel queue, and scheduler)
 - Custom PHP and Xdebug configuration
 - Auto-build Node.js assets on container start
@@ -35,12 +35,12 @@ Laraker is a Docker-based local development environment for PHP (Laravel-ready),
 ## Service Details
 - **PHP**: 8.4 FPM, with Xdebug and Redis extensions, Composer installed
 - **Node.js**: 24, auto-builds assets on start
-- **Nginx**: Serves `/src/public` on port 8001
-- **MySQL**: 8.0, port 3306
+- **Nginx**: Serves `/src/public` on port `8001`
+- **MySQL**: 8.0, port `3306`
   - Database: `laraker_db`
   - User: `user1`, Password: `user1pw123456`
   - Root Password: `rootp@pwroot1`
-- **Redis**: 7.4, port 6379
+- **Redis**: 7.4, port `6379`
 - **Supervisor**: Runs PHP-FPM, Laravel queue, and scheduler
 
 ## Usage
@@ -68,7 +68,3 @@ Laraker is a Docker-based local development environment for PHP (Laravel-ready),
 
 ## Credits
 - Inspired by Laravel, Docker, and community best practices.
-
----
-
-*Note: phpMyAdmin and phpRedisAdmin are not included by default. Add them to `docker-compose.yml` if needed.*
