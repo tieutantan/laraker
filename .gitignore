@@ -1,8 +1,1 @@
-desktop.ini
-#/docker-compose.yml
-.php-cs-fixer.cache
-#/.env
-/.vscode
-.DS_Store
-/buildtest
-/.idea
+.idea
