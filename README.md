@@ -48,6 +48,12 @@ Laraker is a Docker-based local development environment for PHP (Laravel-ready),
   ```sh
   docker exec -it laraker-app /bin/bash
   ```
+  
+- Install Laravel newest, after enter to PHP container:
+  ```sh
+  composer create-project laravel/laravel /tmp/laravel-temp && cp -r /tmp/laravel-temp/. . && rm -rf /tmp/laravel-temp
+  ```
+
 - Laravel queue worker and scheduler are managed by Supervisor (see `docker/php/supervisor.conf`).
 - Xdebug is enabled and configurable via environment variables in `docker/php/xdebug.ini`.
 - Custom PHP settings in `docker/php/php.ini`.
